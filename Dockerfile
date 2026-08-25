@@ -23,4 +23,4 @@ EXPOSE 8000
 
 # AJUSTA "config.wsgi" según el nombre real de tu carpeta de settings
 # (el proyecto creado con "django-admin startproject config ." usaría esto)
-CMD ["gunicorn", "book_library.wsgi:application", "--bind", "0.0.0.0:8001", "--workers", "3"]
+CMD ["gunicorn", "book_library.wsgi:application", "--bind", "0.0.0.0:8000", "--workers", "3"]
